@@ -1,0 +1,33 @@
+#pragma once
+
+// The numeric version format is AAABBBCCCDDDE where:
+//
+// AAA - major version number
+// BBB - minor version number
+// CCC - bugfix version number
+// DDD - alpha / beta (DDD + 500) version number
+// E   - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAABBBCCC. For example:
+//
+// Version      AAABBBCCCDDDE
+//
+// 0.1.0        0000010000000
+// 0.1.2        0000010010000
+// 1.2.3        0010020030000
+// 2.2.0-a.1    0020019990010
+// 3.0.0-b.2    0029999995020
+// 2.2.0-a.1.z  0020019990011
+//
+#define LIBCHAISCRIPT_VERSION       $libchaiscript.version.project_number$ULL
+#define LIBCHAISCRIPT_VERSION_STR   "$libchaiscript.version.project$"
+#define LIBCHAISCRIPT_VERSION_ID    "$libchaiscript.version.project_id$"
+
+#define LIBCHAISCRIPT_VERSION_MAJOR $libchaiscript.version.major$
+#define LIBCHAISCRIPT_VERSION_MINOR $libchaiscript.version.minor$
+#define LIBCHAISCRIPT_VERSION_PATCH $libchaiscript.version.patch$
+
+#define LIBCHAISCRIPT_PRE_RELEASE   $libchaiscript.version.pre_release$
+
+#define LIBCHAISCRIPT_SNAPSHOT_SN   $libchaiscript.version.snapshot_sn$ULL
+#define LIBCHAISCRIPT_SNAPSHOT_ID   "$libchaiscript.version.snapshot_id$"

@@ -1,0 +1,3 @@
+[submodule "libchaiscript/source-chaiscript"]
+	path = libchaiscript/source-chaiscript
+	url = https://github.com/Klaim/ChaiScript.git
